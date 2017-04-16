@@ -1,0 +1,196 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\begin{document} 
+
+\begin{flushleft}
+
+\begin{Large}
+
+\textbf{Name - Ankush Vijay Israney} \\
+\textbf{Student ID - 14057308} \\
+\textbf{CS 613 - Assignment 3 report} \\ 
+
+\end{Large}
+
+\break
+
+\underline { \textbf{PART-1 [Theory Part]}}  \linebreak[2]
+
+\textbf{1:} \linebreak[2]
+
+\underline {A - Sample Entropy}  \linebreak[2]
+
+\begin{equation}
+H(Y) = -\frac{4}{7} * \log_2\frac{4}{7} - \frac{3}{7} * \log_2\frac{3}{7} = 0.9851
+\end{equation}
+
+\underline {B - Information Gains}  \linebreak[2]
+
+\begin{equation}
+H(x_1) = \frac{8}{21}(-\frac{7}{8} * \log_2\frac{7}{8} - \frac{1}{8} * \log_2\frac{1}{8}) 
+			+
+			\frac{13}{21}(-\frac{5}{13} * \log_2\frac{5}{13} - \frac{8}{13} * \log_2\frac{8}{13}) = 0.802
+\end{equation}
+
+\begin{equation}
+Information-Gain(x_1) = H(Y) - H(x_1) = 0.1831
+\end{equation} \linebreak[2]
+
+\begin{equation}
+H(x_2) = \frac{10}{21}(-\frac{7}{10} * \log_2\frac{7}{10} - \frac{3}{7} * \log_2\frac{3}{7}) 
+			+
+			\frac{11}{21}(-\frac{5}{11} * \log_2\frac{5}{11} - \frac{6}{11} * \log_2\frac{6}{11}) = 0.9404
+\end{equation}
+
+
+\begin{equation}
+Information-Gain(x_2) = H(Y) - H(x_2) = 0.0447
+\end{equation} \linebreak[2]
+
+
+\underline {C - Decision Tree}  \linebreak[2]
+
+\break 
+
+\begin{figure}
+\includegraphics[width=18cm,height=20cm,keepaspectratio]{decisiontree.png}
+\end{figure}
+
+\break
+
+\textbf{2:} \linebreak[2]
+
+\underline {A - Class Priors}  \linebreak[2]
+
+\begin{equation}
+P(A = Yes) = 0.6, P(A = No) = 0.4
+\end{equation}
+
+\underline {B - Gaussian Parameters}  \linebreak[2]
+X  =
+\[
+\begin{bmatrix}
+216 & 5.68 & yes \\
+69 & 4.78 & yes \\
+302 & 2.31 & no \\
+60 & 3.16 & yes\\
+393 & 4.2 & no\\
+\end{bmatrix}
+\] \linebreak[2]
+
+
+X-standardized = 
+\[
+\begin{bmatrix}
+0.0551	&1.2477 & yes \\
+-0.9572	&0.5688 & yes \\
+0.6473	&-1.2945 & no \\
+-1.0192	&-0.6533 & yes \\
+1.2740	&0.1313 & no \\
+\end{bmatrix}
+\] 
+
+\begin{equation}
+\mu_{yes1} = -0.6404, \sigma_{yes1} = 0.6031
+\end{equation}
+
+\begin{equation}
+\mu_{yes2} = 0.3877, \sigma_{yes2} = 0.9633
+\end{equation}
+
+\begin{equation}
+\mu_{no1} = 0.9606, \sigma_{no1} = 0.4431
+\end{equation}
+
+\begin{equation}
+\mu_{no2} = -0.5816, \sigma_{no2} = 1.0082
+\end{equation}
+
+\underline {C - Predict Classification}  \linebreak[2]
+
+\textbf{Note:- Test Features Standardized before computing pdf}
+
+\[
+P(A = yes | Chars = 242, A.W.L = 4.56) = P(A = yes).p(Chars = 242 | N(\mu_{yes1}, \sigma_{yes1}).p(Chars = 4.56 | N(\mu_{yes2}, \sigma_{yes2}) 
+\]
+
+\begin{equation}
+P(A = yes | Chars = 242, A.W.L = 4.56) = 0.6 * 0.2312 * 0.4141 = 0.0574
+\end{equation}
+
+\[
+P(A = no | Chars = 242, A.W.L = 4.56) = P(A = no).p(Chars = 242 | N(\mu_{no1}, \sigma_{no1}).p(Chars = 4.56 | N(\mu_{no2}, \sigma_{no2}) 
+\]
+
+\begin{equation}
+P(A = no | Chars = 242, A.W.L = 4.56) = 0.4 * 0.2348 * 0.2457 = 0.0231
+\end{equation}
+
+\begin{equation}
+P(A = yes | Chars = 242, A.W.L = 4.56)_{normalized} = 0.7130
+\end{equation}
+
+\begin{equation}
+P(A = no | Chars = 242, A.W.L = 4.56)_{normalized} = 0.2870
+\end{equation}\linebreak[2]
+
+\textbf{Therefore, Classification = Class - Yes} \pagebreak
+
+\textbf{4:} \linebreak[2]
+\underline {A - VALIDATION SET}  \newline
+
+We could use an iterative approach where we use the training data as the model and test it on the Validation Set. We could set k =1. Then perform KNN on the Validation Set with value k. We expect that the overall error on the Validation Set should decrease with k =1, 2.. etc and then reach a locally optimal point after which the error starts increasing which is a good estimate the user-defined parameter k for the model. This k-value may not be the globally optimum k value depending on the nature of the data and do not want to find this global optimum either since we do not want to overfit the validation set. 
+\newline
+
+\underline {B - TRAINING SET}  \linebreak[2]
+KNN does not have an explicit model, the data itself is the model. Therefore, if we use the data(model) to test the model, we would definitely be overfitting the data and the k would not probably not generalize to the unseen test data. 
+\newline
+
+\underline {C - TEST SET}  \linebreak[2]
+If we use the Test Data in KNN to determine the parameter k then it would probably fit the test data well but it would not be an indicator of the true performance of the system. Therefore, we have a separate validation set and the test data gives an estimate of the true underlying performance of the system on unseen data. \newline
+
+\textbf{5:} \linebreak[2]
+
+\[
+k(x, y) = \sum_{d=1}^{D=3}x_{d}y_{d}
+		= x_{1}y_{1} + x_{2}y_{2} + x_{3}y_{3}
+		= [x_1 \: x_2 \: x_3][y_1 \: y_2 \: y_3]^T
+		= \phi{(x)}\phi{(y)}^T
+\]
+
+\begin{equation}
+\phi{(x)} = [x_1 \: x_2 \: x_3], \phi{(y)} = [y_1 \: y_2 \: y_3]
+\end{equation}
+
+\begin{equation}
+\phi{(u)} = [u_1 \: u_2 \: u_3]
+\end{equation}
+
+\textbf{6:} \newline \newline
+\textbf{False} - This is because the kernel trick is to implicitly compute as if in higher dimensional space but since there are many features and less training data therefore there is less coverage and it makes no sense to compute as if in higher space. Here, the linear kernel should suffice.
+
+\break
+
+\underline { \textbf{PART-2 Naive Bayes Classifier}}  \linebreak[2]
+
+\textbf{Precision = 0.6817} \linebreak[2]
+
+\textbf{Recall = 0.9557} \linebreak[2]
+
+\textbf{F - measure = 0.7957} \linebreak[2]
+
+\textbf{Accuracy = 0.8120} \\[1.5in]
+
+\underline { \textbf{PART-3 Multi-Class Support Vector Machines}}  \linebreak[2]
+
+\textbf{Accuracy for ONE VS ALL:
+    0.8812} \linebreak[2]
+
+\textbf{Accuracy for ONE VS ONE:
+    0.9024} \linebreak[2]
+
+\end{flushleft} 
+
+\end{document}
