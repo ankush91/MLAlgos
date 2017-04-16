@@ -8,4 +8,6 @@ This folder contains solutions to basic theory questions, relevant implementatio
 # Linear Regression
 This folder contains various implementations of Linear Regression such as the Closed form Solution (Global Least Squared Error), the Closed form Solution (with Cross-Validation), the Closed form Solution (Locally Weighted Linear Regression) and the Batch Gradient Descent Algorithm. The dataset used is 44 tuples (2 features - Age and Temperature of Water) used to predict Length of Fish.
 
+# Classification - Naive Bayes & Multi-Class SVM
+This folder contains implementations for the Naive Bayes Algorithm and Multi-Class SVM (using MATLAB's fitcsvm function to compare the ONE-VS-ONE and ONE-VS-ALL approach). The email SPAM dataset comprising of 4601 datapoints (57 continuous valued features) is used for the Naive Bayes classification. The Cartioocgraphy dataset is used for the Multi-Class SVM problem and comprises of 2126 datapoints (21 features) and the objective is to determine fetal class codes given observations.
 
