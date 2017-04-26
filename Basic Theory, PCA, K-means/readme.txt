@@ -19,4 +19,4 @@
  
 **Instructions for Drexel's Tux:
 ->If Matlab has to be tested on tux, then we can just cd into the directory and type in, matlab -r "run part2.m" to run the code. 
-->However, please not that I got a few errors such as dimensions diagree, function defn not permitted etc while doing these. I am not sure as to be what could be the reason for the same.
+->However, please note that I got a few errors such as dimensions diagree, function defn not permitted etc while doing these. I am not sure as to be what could be the reason for the same.
