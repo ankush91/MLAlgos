@@ -1,5 +1,5 @@
 ### Organization
-* This folder contains code(+data), figures, and report in respective folders for the Assignment Specification in HW_2 student. 
+* This folder contains code(+data), figures, and report in respective folders for the Assignment Specification in HW_2 student
 * This focus of the assignment is on different (closed-form and gradient descent) ways of computing variants (Global and Locally weighted) of Linear Regression
 
 ### Source Code
