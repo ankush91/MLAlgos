@@ -16,7 +16,7 @@
 * The Cartioocgraphy dataset is used for the Multi-Class SVM problem and comprises of 2126 samples (21 features). The objective is to determine fetal class codes given observations.
 
 ## [Artificial Neural Networks](./Artificial%20Neural%20Networks/readme.txt)
-* This folder contains implementations for BINARY & MULTI-CLASS Artificial Neural Networks (3 Layers | 20 Node Hidden Layer) using the Batch Gradient Descent Algorithm. 
+* This folder contains implementations for Binary & Multi-Class Artificial Neural Networks (3 Layers | 20 Node Hidden Layer) using the Batch Gradient Descent Algorithm. 
 * 2-D Visualization for Precision vs Recall is done for the Binary classification case (in part2.m).
 * An email Spam dataset comprising of 4601 samples (57 continuous valued features) is used for the Binary classification case. 
 * The Cartioocgraphy dataset comprising of 2126 samples (21 features) is used for the Multi-Class Artificial Neural Network problem. The objective is to determine fetal class codes given observations.
