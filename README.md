@@ -2,7 +2,7 @@
 * Implementations of various Machine Algorithms using assignment specifications as part of graduate course work in CS 613 (Machine Learning), taught at Drexel Univeristy in Fall 2016. 
 * The Implementations are in Matlab (tested on version r2016b)
 
-## ![Basic Theory, PCA, K-means](./Basic Theory, PCA, K-means/)
+[Basic Theory, PCA, K-means](./"Basic Theory, PCA, K-means"/readme.txt)
 * Contains basic theory questions
 * Implementations for Principal Component Analysis and K-means (using EM algorithm) on the 768 data points (8 features) `diabetes.csv` dataset.
 
