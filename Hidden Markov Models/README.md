@@ -1,4 +1,4 @@
-### Implements 2 problems encountered in Hidden Markov Models. The first problem is the Evaluation problem solved using the Recursive Forward algorithm. The second problem is the Learning problem solved using the Baum Welcher Expectation Maximization algorithm.
+### Implements 2 procedures encountered in Hidden Markov Models. The first is the Evaluation problem solved using the Recursive Forward algorithm. The second is the Learning problem solved using the Baum Welcher Expectation Maximization algorithm.
 
 ### Organization
 * This folder contains code, figures and report in respective folders for the assignment specification in EC_Student.pdf

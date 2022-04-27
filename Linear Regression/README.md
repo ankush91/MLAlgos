@@ -1,4 +1,4 @@
-### Implements different (Closed-Form and Gradient Descent) ways of computing variants (Global and Locally weighted) of Linear Regression.
+### Implements Closed-Form and Gradient Descent for Global and Locally weighted Linear Regression.
 
 ### Organization
 * This folder contains code(+data), figures, and report in respective folders for the Assignment Specification in HW_2 student
