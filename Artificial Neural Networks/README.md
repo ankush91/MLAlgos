@@ -1,5 +1,5 @@
 
-### Implements Classification (Binary & Multi-Class) for Artificial Neural Networks using the Batch Gradient Descent algorithm. The Precision vs Recall graph is also visualized in `part2.m`.
+### Implements Classification (Binary & Multi-Class) for Artificial Neural Networks using the Batch Gradient Descent algorithm. Precision vs Recall graph is visualized in `part2.m`.
 
 ### Organization
 * This folder contains code(+data), figures, and report in respective folders for the Assignment Specification in HW_4 Student

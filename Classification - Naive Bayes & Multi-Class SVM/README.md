@@ -1,4 +1,4 @@
-### Implements Classification using Naive Bayes and Multi-Class SVM (One-VS-All & One-VS-One) techniques.
+### Implements Classification using Naive Bayes and Multi-Class SVM (One-VS-All & One-VS-One) techniques
 
 ### Organization
 * This folder contains code(+data), figures, and report in respective folders for the Assignment Specification in HW3_Student.pdf

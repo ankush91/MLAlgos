@@ -1,4 +1,4 @@
-### Implements Principal Component Analysis and K-means (using EM algorithm) with solutions to some Eigen Vector theory questions.
+### Implements Principal Component Analysis and K-means (using EM algorithm) with solutions to Eigen Vector theoretical questions
 
 ### Organization
 * The folder contains code, figures and report in respective folders for the Assignment Specfication in HW1_Student.pdf
